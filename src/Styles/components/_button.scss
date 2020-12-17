@@ -1,0 +1,52 @@
+%button {
+  font-size: $font-size-m;
+  font-family: "Sansita Swashed", cursive;
+  word-spacing: 0.2rem;
+  margin: $size-m;
+  padding: $size-s;
+  outline: none;
+  border: none;
+  border-radius: $size-s;
+  background-color: #00e1ff;
+  width: 10rem;
+  transition: all ease-in-out 0.1s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.submit {
+  @extend %button;
+}
+
+.option {
+  @extend %button;
+  font-size: $font-size-l;
+  width: 80%;
+  padding: $size-m;
+  background-color: #ffe600;
+  &.selected {
+    background-color: #0011ff;
+    transform: scale(1.03);
+    color: #ffffff;
+  }
+  &:hover {
+    transform: scale(1.03);
+  }
+  &#correct {
+    background-color: #209409;
+    transform: scale(1.03);
+    color: #ffffff;
+  }
+}
+
+.next {
+  @extend %button;
+}
+
+@media screen and (max-width: $screen-size) {
+  .option {
+    font-size: $font-size-m;
+    width: 90%;
+  }
+}

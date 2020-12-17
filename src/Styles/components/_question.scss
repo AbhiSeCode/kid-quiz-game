@@ -1,0 +1,27 @@
+.question {
+  background-color: rgba($color: #fafafa, $alpha: 0.9);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50rem;
+}
+
+.question-element > p {
+  display: block;
+  font-size: $font-size-l;
+  margin: $size-s;
+  color: #000000;
+}
+
+@media screen and (max-width: $screen-size) {
+  .question {
+    width: 23rem;
+  }
+
+  .question-element > p {
+    font-size: $font-size-m;
+  }
+}

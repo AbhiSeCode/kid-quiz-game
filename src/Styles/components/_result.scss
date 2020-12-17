@@ -1,0 +1,16 @@
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.page-result {
+  background-color: rgba($color: #c8ff00, $alpha: 0.9);
+  word-break: break-all;
+  width: 20rem;
+  font-size: $font-size-l;
+  word-spacing: 0.2rem;
+  text-align: center;
+  padding: $size-s;
+  border-radius: $size-s;
+}
